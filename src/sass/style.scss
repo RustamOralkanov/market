@@ -1,0 +1,56 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css");
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/general';
+
+@import 'libs/fonts';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+}
+
+.container {
+    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container-fluid {
+   padding: 0;
+   align-items: flex-start !important;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: unset;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/category';
+@import 'blocks/cards';
+@import 'blocks/smcard';
+@import 'blocks/sale';
+@import 'blocks/brands';
+@import 'blocks/about';
+@import 'blocks/discount';
+@import 'blocks/footer';
+
+@import 'blocks/catalog';
+@import 'blocks/products';
+@import 'blocks/item';
+@import 'blocks/additional';
+@import 'blocks/cart';
+@import 'blocks/profile';
+@import 'blocks/favorite';
+
+@import 'blocks/media';

@@ -1,0 +1,21 @@
+.brands {
+    &-slider {
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    &-item {
+        display: block;
+        width: 180px;
+        height: 180px;
+        padding: 15px;
+        border: 1px solid #91939930;
+        border-radius: var(--mt-radius);
+        img {
+            width: 100%;
+            height: auto;
+        }
+        &:hover {
+            box-shadow: -1px 0px 12px 7px rgba(34, 60, 80, 0.1);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@media (max-width: 1500px) {
+    .container {
+        width: 1320px;
+    }
+    .header {
+        .row {
+            &:first-child {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        width: 1140px;
+    }
+    .best {
+        .card-item {
+            width: calc(20% - 16px);
+            &:nth-child(5n) {
+                margin-right: 0px;
+            }
+            &:nth-child(6n) {
+                margin-right: 16px;
+            }
+        }
+    }
+    .footer {
+        .col-md-4 {
+            padding-left: 4.75rem;
+            padding-right: 4.75rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 1024px;
+    }
+    .header {
+        .row {
+            &:first-child {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+

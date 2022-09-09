@@ -1,0 +1,67 @@
+.smcard {
+    padding: 15px 10px;
+    &-item {
+        display: flex;
+        background-color: #ffffff;
+        filter: drop-shadow(0 14px 16px rgba(0,16,61,.06));
+        position: relative;
+        padding: 15px 40px 15px 15px;
+        &:hover {
+            filter: drop-shadow(0 14px 16px rgba(0,16,61,.2));
+        }
+        &-img {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            margin-right: 15px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-body {
+            &-name {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 14px;
+                color: var(--mt-dark);
+                margin-bottom: 8px;
+                height: 29.45px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; 
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                letter-spacing: 0.48px;
+            }
+            &-price {
+                display: flex;
+                align-items: baseline;
+                font-size: 18px;
+                color: var(--mt-default);
+                font-weight: 600;
+                .old {
+                    color: var(--mt-grey);
+                    text-decoration: line-through;
+                    font-size: 12px;
+                    margin-right: 12px;
+                }
+            }
+        }
+        &-favorite {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 10px;
+            right: 12px;
+            cursor: pointer;
+            &:hover {
+                svg {
+                    path {
+                        fill: #e31e24;
+                    }
+                }
+            }
+        }
+    }
+}

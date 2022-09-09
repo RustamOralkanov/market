@@ -1,0 +1,33 @@
+.category {
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 16px 20px;
+        position: relative;
+        border: 1px solid #a9a9a930;
+        border-radius: var(--mt-radius);    
+        margin-right: 20px;
+        margin-bottom: 20px; 
+        width: calc(25% - 20px);
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &-title {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: var(--mt-dark);
+            font-weight: 600;
+        }
+        &-img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

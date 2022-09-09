@@ -1,0 +1,9 @@
+.discount {
+    &-slider {
+        padding: 10px;
+        .card-item {
+            margin-right: 0;
+            width: unset;
+        }
+    }
+}
