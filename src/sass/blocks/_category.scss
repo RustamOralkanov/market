@@ -11,9 +11,11 @@
         position: relative;
         border: 1px solid #a9a9a930;
         border-radius: var(--mt-radius);    
+        background-color: #ffffff;
         margin-right: 20px;
         margin-bottom: 20px; 
         width: calc(25% - 20px);
+        transition: all 0.5s;
         &:nth-child(4n) {
             margin-right: 0;
         }
@@ -28,6 +30,10 @@
             img {
                 width: 100%;
             }
+        }
+        &:hover {
+            transition: all 0.5s;
+            filter: drop-shadow(0 14px 16px rgba(0, 16, 61, .08));
         }
     }
 }
