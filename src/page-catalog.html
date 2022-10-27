@@ -11,18 +11,6 @@
 </head>
 
 <body>
-    <!-- Блок Preloader -->
-    <div class="preloader">
-
-    <!-- Добавляем готовую структуру Preloader -->
-        <div class="sk-chase">
-            <div class="sk-chase-dot">
-                <svg width="980" height="347" viewBox="0 0 980 347" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M183.75 16.65H169.75H108.15H95.9H34.3V78.25V227.7H95.9V78.25H108.15V227.7H169.75V78.25H183.75V227.7H245.35V78.25V16.65H183.75ZM463.682 16.3V139.85L375.832 51.65V16.3H314.232V227.7H375.832V138.8L463.682 227L464.382 227.7H465.782H525.282V16.3H463.682ZM660.663 227.7V16.65H598.713V227.7H660.663ZM883.75 16.65H795.9H734.3V78.25V166.1V227.7H795.9H883.75V286.85H945.35V227.7V166.1V78.25V16.65H883.75ZM883.75 166.1H795.9V78.25H883.75V166.1Z" fill="#ffffff"/>
-                </svg>
-            </div>
-        </div>
-    </div>
 
     <header class="header">
         <div class="header-mobile">
@@ -58,66 +46,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <a href="index.html" class="col-md-2 header-logo">
-                    <img src="icons/logo.svg" alt="logo">
+           <div class="header-bottom-items">
+                <a href="index.html" class="header-logo">
+                    <img src="img/ranix.png" alt="logo">
                 </a>
-                <div class="col-md-1">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                <div class="header-button">
+                    <a href="page-catalog.html" class="header-link header-btn">
                         <span class="grey-cicrle">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff">
                                 <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
                             </svg>
                         </span> Каталог
                     </a>
-                    <div class="dropdown-menu header-catalog">
-                        <div class="header-catalog-item">
-                            <a href="page-catalog.html" class="header-catalog-link">Каталог</a>
-                        </div>
-                        <div class="header-catalog-item">
-                            <a href="page-catalog.html" class="header-catalog-link">Компьютеры</a>
-                            <ul class="header-catalog-list">
-                                <li><a href="page-items.html">Настольные ПК</a></li>
-                                <li><a href="page-items.html">Компьютеры</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-catalog-item">
-                            <a href="#" class="header-catalog-link">Компьютеры</a>
-                            <ul class="header-catalog-list">
-                                <li><a href="#">Настольные ПК</a></li>
-                                <li><a href="#">Компьютеры</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-catalog-item">
-                            <a href="#" class="header-catalog-link">Бытовая техника</a>
-                            <ul class="header-catalog-list">
-                                <li><a href="#">Холодильники</a></li>
-                                <li><a href="#">Стиральные машины</a></li>
-                                <li><a href="#">Варочные панели</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-catalog-item">
-                            <a href="#" class="header-catalog-link">Компьютеры</a>
-                            <ul class="header-catalog-list">
-                                <li><a href="#">Настольные ПК</a></li>
-                                <li><a href="#">Компьютеры</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-catalog-item">
-                            <a href="#" class="header-catalog-link">Компьютеры</a>
-                            <ul class="header-catalog-list">
-                                <li><a href="#">Настольные ПК</a></li>
-                                <li><a href="#">Компьютеры</a></li>
-                                <li><a href="#">Ноутбуки</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-md-7">
+                <div class="header-input">
                     <form class="header-search">
                         <input class="header-search-input" type="search" placeholder="Поиск товаров"
                             aria-label="Search">
@@ -187,7 +129,7 @@
                         </button>
                     </form>
                 </div>
-                <div class="col-md-2 header-pages">
+                <div class="header-pages">
                     <a href="page-profile.html" class="header-page">
                         <span class="grey-cicrle">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -220,6 +162,109 @@
                 </div>
             </div>
         </div>
+        <div class="header-catalog">
+            <div class="container">
+                <div class="header-catalog-wrapper">
+                    <ul class="header-catalog-menu">
+                        <li>
+                            <a href="page-catalog.html">
+                                Все категории
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page-items.html">
+                                Печатная техника
+                            </a>
+                            <div class="header-catalog-block">
+                               <ul class="header-catalog-list">
+                                <li>
+                                    <a href="#">МФУ</a>
+                                    <ul class="header-catalog-list-1">
+                                        <li><a href="#">МФУ</a></li>
+                                        <li><a href="page-items.html">Принтеры</a></li>
+                                        <li><a href="#">Плоттеры</a></li>
+                                        <li><a href="#">Переносные принтеры</a></li>
+                                        <li><a href="#">3D принтеры</a></li>
+                                        <li><a href="#">Шредеры</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page-items.html">Принтеры</a>
+                                    <ul class="header-catalog-list-1">
+                                        <li><a href="page-items.html">Принтеры</a></li>
+                                        <li><a href="#">Плоттеры</a></li>
+                                        <li><a href="#">Переносные принтеры</a></li>
+                                        <li><a href="#">3D принтеры</a></li>
+                                        <li><a href="#">Шредеры</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Плоттеры</a>
+                                    <ul class="header-catalog-list-1">
+                                        <li><a href="#">Плоттеры</a></li>
+                                        <li><a href="#">Переносные принтеры</a></li>
+                                        <li><a href="#">3D принтеры</a></li>
+                                        <li><a href="#">Шредеры</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Переносные принтеры</a>
+                                    <ul class="header-catalog-list-1">
+                                        <li><a href="#">Переносные принтеры</a></li>
+                                        <li><a href="#">3D принтеры</a></li>
+                                        <li><a href="#">Шредеры</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">3D принтеры</a>
+                                    <ul class="header-catalog-list-1">
+                                        <li><a href="#">3D принтеры</a></li>
+                                        <li><a href="#">Шредеры</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Шредеры</a>
+                                    <ul class="header-catalog-list-1">
+                                        <li><a href="#">Шредеры</a></li>
+                                    </ul>
+                                </li>
+                               </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Компьютеры
+                            </a>
+                            <div class="header-catalog-block">
+                                <ul class="header-catalog-list">
+                                    <li><a href="#">Ноутбуки и аксессуары</a></li>
+                                    <li><a href="#">Комплектующие</a></li>
+                                    <li><a href="#">Сетевое оборудование</a></li>
+                                    <li><a href="#">Компьютеры и мониторы</a></li>
+                                    <li><a href="#">Компьютерные аксессуары</a></li>
+                                    <li><a href="#">Программное обеспечение</a></li>
+                                </ul>
+                             </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ноутбуки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Смартфоны
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Бытовая техника
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section class="breadcrumbs">
@@ -234,7 +279,7 @@
     <section class="catalog">
         <div class="container">
             <div class="catalog-wrapper">
-                <a href="page-items.html" class="catalog-item">
+                <a href="page-catalog-items.html" class="catalog-item">
                     <div class="catalog-item-img">
                         <img src="img/dfd0f840df70aec1bfc4d21a81af143e.jpg" alt="catalog-item">
                     </div>
@@ -785,6 +830,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        if (window.innerWidth < 768) {
+            document.querySelector('.breadcrumbs').style.display = 'none';
+            document.querySelector('.discount').style.display = 'none';
+            document.querySelector('.about').style.display = 'none';
+            document.querySelector('footer').style.display = 'none';
+
+            document.querySelector('.catalog').style.margin = '20px 0 140px';
+        };
+    </script>
 </body>
 
 </html>

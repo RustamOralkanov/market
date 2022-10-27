@@ -6,6 +6,9 @@
 
 @import 'libs/fonts';
 
+html {
+    scroll-padding-top: 90px;
+}
 
 * {
     margin: 0;
@@ -53,5 +56,7 @@ a {
 @import 'blocks/cart';
 @import 'blocks/profile';
 @import 'blocks/favorite';
+@import 'blocks/auth';
+
 
 @import 'blocks/media';

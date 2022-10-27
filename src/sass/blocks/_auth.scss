@@ -1,0 +1,91 @@
+.auth {
+    margin-top: 150px;
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    &-title {
+        margin-bottom: 24px;
+    }
+    &-subtitle {
+        font-size: 14px;
+        color: var(--mt-grey);
+    }
+    &-wrapper {
+        max-width: 428px;
+        width: 100%;
+    }
+    form {
+        margin-top: 24px;
+    }
+    &-input {
+        margin-bottom: 8px;
+        position: relative;
+        input {
+            border: 1px solid #CAD1E1;
+            border-radius: 5px;
+            width: 100%;
+            padding: 14px 15px;
+        }
+        label {
+            position: absolute;
+            right: 7px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            font-weight: 600;
+            color: #e31e24;
+            cursor: pointer;
+            a {
+                color: #e31e24;
+            }
+        }
+        button {
+            margin-top: 32px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            padding: 9px;
+            background-color: var(--mt-default);
+            color: var(--mt-white);
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        font-size: 14px;
+        a {
+            margin-left: 8px;
+            color: #e31e24;
+            text-decoration: underline;
+        }
+    }
+    &-forget {
+        display: none;
+        &-text {
+            font-size: 16px;
+            text-align: center;
+            margin: 16px 0;
+        }
+        .auth-input-group {
+            display: flex;
+            justify-content: center;
+            input {
+                width: 40px;
+                height: 54px;
+                padding: 0;
+                text-align: center;
+                margin-right: 16px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-countdown {
+            text-align: center;
+            font-size: 14px;
+            color: var(--mt-grey);
+        }
+    }
+}

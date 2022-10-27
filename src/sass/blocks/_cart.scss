@@ -40,9 +40,15 @@
             &-name {
                 padding: 0 10px;
                 font-weight: 600;
-                line-height: 1.3;
-                display: block;
+                line-height: 1.1;
                 color: var(--mt-dark);
+                flex: 0 0 200px;
+                .name {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; 
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
                 span {
                     margin-top: 16px;
                     display: block;
@@ -183,10 +189,9 @@
                 flex-wrap: wrap;
                 div {
                     width: calc(50% - 32px);
-                    margin: 0 16px;
+                    margin: 0 16px 16px;
                     display: flex;
                     flex-direction: column;
-                    margin-bottom: 16px;
                     input {
                         height: 30px;
                         border: unset;

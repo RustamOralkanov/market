@@ -224,6 +224,14 @@
                         }
                     }
                 }
+                .active {
+                    .page-link {
+                        background-color: var(--mt-default);
+                    }
+                }
+                .disabled>.page-link {
+                    background-color: #f2f3f5;
+                }
             }
         }
     }

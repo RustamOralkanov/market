@@ -50,6 +50,10 @@
                 }
             }
         }
+        &-body {
+            padding-bottom: 16px;
+            padding-left: 16px;
+        }
     }
     &-reviews {
         margin-bottom: 30px;
@@ -124,6 +128,11 @@
             color: var(--mt-white);
             background-color: var(--mt-default);
         }
+    }
+    &-header {
+        font-size: 1.5em;
+        margin-bottom: 16px;
+        font-weight: 600;
     }
     #pills-reviews {
         height: 500px;

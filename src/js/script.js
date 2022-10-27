@@ -43,6 +43,10 @@ var swiper = new Swiper(".smcard", {
 var swiper = new Swiper(".brands-slider", {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
     breakpoints: {
         320: {
             slidesPerView: 2,
@@ -154,6 +158,58 @@ hamburger.addEventListener('click', () => {
     }
 });
 
+
+const catalogBtn = document.querySelector('.header-btn');
+const catalog = document.querySelector('.header-catalog');
+
+if (window.innerWidth > 992) {
+
+    catalogBtn.addEventListener('click', (item) => {
+        item.preventDefault();
+        catalog.classList.toggle('appear');
+    });
+
+}
+
+try{
+    const brandsWrapper = document.querySelector('.brandsSearch-block');
+    const brandsLetter = document.querySelectorAll('.brandsSearch-item');
+
+    brandsWrapper.addEventListener('click', (event)=> {
+        let target = event.target;
+
+        if(target.classList.contains('brandsSearch-item')) {
+            for(let i = 0; i < brandsLetter.length; i++) {
+              brandsLetter[i].classList.remove('active');
+            }
+            target.classList.add('active');
+          }
+    });
+
+}catch(e){}
+
+try{
+
+    let goTopBtn = document.querySelector('#toTop');
+                                                                         
+    let trackScroll = function() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            goTopBtn.classList.add('show');
+        } else {
+            goTopBtn.classList.remove('show');
+        }
+    };
+
+    let backToTop = function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+
+}catch(e){}
+
 const filter = document.querySelector('#filter');
 const filterBlock = document.querySelector('.products-filter');
 const overlay = document.createElement('div');
@@ -177,3 +233,7 @@ function filterToggle() {
 filter.addEventListener('click', filterToggle);
 
 overlay.addEventListener('click', filterToggle);
+
+
+
+

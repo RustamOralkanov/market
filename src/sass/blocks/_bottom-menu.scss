@@ -19,6 +19,9 @@
             align-items: center;
             width: 60px;
             margin-right: 8px;
+            &:last-child {
+                margin-right: 0;
+            }
             &:hover {
                 color: var(--mt-white);
             }
