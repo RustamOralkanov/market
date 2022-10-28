@@ -114,11 +114,7 @@ button:focus:not(:focus-visible) {
         width: 320px;
         animation: scale 2.5s infinite linear both;
         svg {
-            g {
-                path {
-                    width: 320px;
-                }
-            }
+            width: 100%;
         }
     }
 }
@@ -132,6 +128,15 @@ button:focus:not(:focus-visible) {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes slide {
+    0% {
+        margin-right: -1000px;
+    }
+    100% {
+        margin-right: 16px;
     }
 }
 

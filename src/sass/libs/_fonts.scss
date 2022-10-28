@@ -14,3 +14,66 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+  
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+  
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+  
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+  
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+  
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  
+  .icon-address-card-solid:before { content: '\e800'; } /* '' */
+  .icon-bars-staggered-solid:before { content: '\e801'; } /* '' */
+  .icon-cart-shopping-solid:before { content: '\e802'; } /* '' */
+  .icon-heart-solid:before { content: '\e803'; } /* '' */
+  .icon-bag-shopping-solid:before { content: '\e804'; } /* '' */
+  .icon-rectangle-list-solid:before { content: '\e805'; } /* '' */
+  .icon-right-from-bracket-solid:before { content: '\e806'; } /* '' */
+  .icon-search-new:before { content: '\e807'; } /* '' */
+  .icon-list-solid:before { content: '\e808'; } /* '' */
+  .icon-start:before { content: '\e809'; } /* '' */
+  .icon-truck-solid:before { content: '\e80a'; } /* '' */
+  .icon-user-regular:before { content: '\e80b'; } /* '' */
+  .icon-caret-down-fill:before { content: '\e80c'; } /* '' */
+  .icon-check2-all:before { content: '\e80d'; } /* '' */
+  .icon-check:before { content: '\e80e'; } /* '' */
+  .icon-dot:before { content: '\e80f'; } /* '' */
+  .icon-electronics-new:before { content: '\e810'; } /* '' */
+  .icon-cancel:before { content: '\e811'; } /* '' */
+  .icon-list-solid-1:before { content: '\e813'; } /* '' */
+  .icon-user-solid:before { content: '\e814'; } /* '' */
+  .icon-rectangle-list-solid-1:before { content: '\e815'; } /* '' */
+  

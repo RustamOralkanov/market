@@ -25,8 +25,8 @@
     }
     .best {
         .card-item {
-            width: calc(20% - 16px);
-            &:nth-child(5n) {
+            width: calc(25% - 16px);
+            &:nth-child(4n) {
                 margin-right: 0px;
             }
             &:nth-child(6n) {
@@ -208,10 +208,6 @@
 }
 
 @media (max-width: 1024px) {
-    .container {
-        width: 992px;
-        padding: 0 20px;
-    }
     .footer {
         .col-md-4 {
             padding-left: 3.75rem;
@@ -220,7 +216,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .container {
         width: 100%;
         padding: 0 30px;
@@ -284,6 +280,8 @@
                 height: 40px;
                 padding-right: 0 !important;
                 width: 100%;
+                margin-left: 0;
+                margin-top: -6px;
             }
         }
         .container {
@@ -411,11 +409,11 @@
     .best {
         .card-item {
             margin-right: 10px; 
-            width: calc(25% - 10px);
-            &:nth-child(4n) {
+            width: calc(33% - 10px);
+            &:nth-child(3n) {
                 margin-right: 0px;
             }
-            &:nth-child(5n) {
+            &:nth-child(4n) {
                 margin-right: 10px;
             }
             &:nth-child(6n) {
@@ -745,6 +743,7 @@
     .item {
         &-right {
             width: 100%;
+            order: 1;
         }
         &-info {
             width: 100%;

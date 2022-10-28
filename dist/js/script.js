@@ -188,7 +188,7 @@ try{
 
 }catch(e){}
 
-try{
+/* try{
 
     let goTopBtn = document.querySelector('#toTop');
                                                                          
@@ -208,31 +208,92 @@ try{
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
 
+}catch(e){} */
+
+/* Фильтр */
+
+try {
+    const filter = document.querySelector('#filter');
+    const filterBlock = document.querySelector('.products-filter');
+    const overlay = document.createElement('div');
+
+    const filterToggle = function() {
+
+        filterBlock.classList.toggle('products-filter-active');
+
+        if (filterBlock.classList.contains('products-filter-active')) {
+
+            document.querySelector('body').style.overflow = 'hidden';
+            overlay.classList.add('overlay');
+            document.querySelector('body').append(overlay);
+
+        } else {
+            document.querySelector('body').style.overflow = '';
+            overlay.remove();
+        }
+    }
+
+    filter.addEventListener('click', filterToggle);
+
+    overlay.addEventListener('click', filterToggle);
 }catch(e){}
 
-const filter = document.querySelector('#filter');
-const filterBlock = document.querySelector('.products-filter');
-const overlay = document.createElement('div');
+/* Всплывашки */
 
-function filterToggle() {
+try{
+    const notificationParent = document.querySelector('.notification');
+    const cartBtn = document.querySelectorAll('.card-item-cart');
+    const notificationCancel = '<i class="icon-cancel"></i>';
 
-    filterBlock.classList.toggle('products-filter-active');
 
-    if (filterBlock.classList.contains('products-filter-active')) {
+    console.log(document.body.scrollTop);
 
-        document.querySelector('body').style.overflow = 'hidden';
-        overlay.classList.add('overlay');
-        document.querySelector('body').append(overlay);
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 150) {
+            notificationParent.style.top = '100px';
+        } else {
+            notificationParent.style.top = '';
+        }
+    });
 
-    } else {
-        document.querySelector('body').style.overflow = '';
-        overlay.remove();
-    }
-}
+    const createBlock = function() {
+        const notificationBlock = document.createElement('div');
+        notificationBlock.classList.add('notification-cart');
 
-filter.addEventListener('click', filterToggle);
+            notificationBlock.innerHTML = `
+            <div class="notification-cart-header">
+                Товар добавлен в корзину 
+                ${notificationCancel}
+            </div>
+            <div class="notification-cart-body">
+                <div class="notification-cart-img">
+                    <img src="img/1f9b97c4df52ad96a07b9b07e3b689ec@150.jpg" alt="cart-image">
+                </div>
+                <div class="notification-cart-text">
+                    <div class="notification-cart-name">
+                        Epson L805 (А4, Струйный, Цветной)
+                    </div>
+                    <div class="notification-cart-price">
+                        Цена: <span>195 000</span>тг
+                    </div>
+                    <a href="#" class="notification-cart-cart">
+                        Перейти в корзину
+                    </a>
+                </div>
+            </div>`;
 
-overlay.addEventListener('click', filterToggle);
+            notificationParent.append(notificationBlock);
+    };
+
+    cartBtn.forEach((item) => {
+        item.addEventListener('click', createBlock);
+    });
+
+    
+
+}catch(e){}
+
+
 
 
 
