@@ -12,6 +12,7 @@
         margin-bottom: 16px;
         position: relative;
         transition: all 0.3s;
+        border-radius: 12px;
         &:nth-child(6n) {
             margin-right: 0;
         }
@@ -114,35 +115,37 @@
             background-color: var(--mt-border);
             cursor: pointer;
             transition: all 0.5s;
-            svg {
+            i {
                 width: 20px;
-                height: 20px;
+                height: 20px; 
             }
             &:hover {
                 background-color: var(--mt-default);
                 transition: all 0.5s;
-                svg {
-                    path {
-                        fill: #ffffff;
-                    }
+                i {
+                    color: var(--mt-white);
                 }
             }
             
         }
         &-favorite {
-            width: 24px;
-            height: 24px;
             position: absolute;
             top: 10px;
             right: 12px;
             cursor: pointer;
-            transition: all 0.5s;
+            i {
+                transition: all 0.5s;
+                color: #aeaeae60;
+                &::before {
+                    width: 24px;
+                    height: 24px;
+                    font-size: 21px;
+                }
+            }
             &:hover {
-                svg {
-                    path {
-                        transition: all 0.5s;
-                        fill: #e31e24;
-                    }
+                i {
+                    transition: all 0.5s;
+                    color: #e31e24;
                 }
             }
         }
@@ -156,5 +159,17 @@
             padding: 3px 15px;
             border-radius: 0 12px 12px 0;
         }
+    }
+}
+
+.card-item-favorite.active {
+    i {
+        color: #e31e24;
+    }
+}
+.card-item-cart.active {
+    background-color: var(--mt-default);
+    i {
+        color: var(--mt-white);
     }
 }

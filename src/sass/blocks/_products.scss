@@ -49,9 +49,14 @@
                         height: 20px;
                         visibility: hidden;
                         &:checked + label:before {
-                            background: url('../img/check.svg');
+                            font-family: 'fontello';
                             background-color: var(--mt-default);
-                            background-position: center center;
+                            content:'\e80e';
+                            color: var(--mt-white);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 16px;
                         }
                     }
                     label {
@@ -88,9 +93,14 @@
                         opacity: 0;
                         z-index: 99;
                         &:checked + .mt-label::before {
+                            font-family: 'fontello';
                             background-color: var(--mt-default);
-                            background-image: url('../img/check.svg');
-                            background-position: center center;
+                            content:'\e80e';
+                            color: var(--mt-white);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 16px;
                         }
                     }
                     &-label {
@@ -147,6 +157,7 @@
         }
     }
     &-item {
+        width: 100%;
         &-header {
             display: flex;
             justify-content: space-between;

@@ -150,7 +150,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('header-mobile-hamburger-active');
 
     if (hamburger.classList.contains('header-mobile-hamburger-active')) {
-        topMenu.style.top = '65px';
+        topMenu.style.top = '59px';
         document.querySelector('body').style.overflow = 'hidden';
     } else {
         topMenu.style.top = '';
@@ -242,54 +242,16 @@ try {
 
 try{
     const notificationParent = document.querySelector('.notification');
-    const cartBtn = document.querySelectorAll('.card-item-cart');
-    const notificationCancel = '<i class="icon-cancel"></i>';
-
-
-    console.log(document.body.scrollTop);
-
+    console.log(window.screen.width);
     window.addEventListener('scroll', () => {
         if(window.pageYOffset > 150) {
             notificationParent.style.top = '100px';
+        } else if (window.screen.width < 1024) {
+            notificationParent.style.top = '70px';
         } else {
             notificationParent.style.top = '';
         }
     });
-
-    const createBlock = function() {
-        const notificationBlock = document.createElement('div');
-        notificationBlock.classList.add('notification-cart');
-
-            notificationBlock.innerHTML = `
-            <div class="notification-cart-header">
-                Товар добавлен в корзину 
-                ${notificationCancel}
-            </div>
-            <div class="notification-cart-body">
-                <div class="notification-cart-img">
-                    <img src="img/1f9b97c4df52ad96a07b9b07e3b689ec@150.jpg" alt="cart-image">
-                </div>
-                <div class="notification-cart-text">
-                    <div class="notification-cart-name">
-                        Epson L805 (А4, Струйный, Цветной)
-                    </div>
-                    <div class="notification-cart-price">
-                        Цена: <span>195 000</span>тг
-                    </div>
-                    <a href="#" class="notification-cart-cart">
-                        Перейти в корзину
-                    </a>
-                </div>
-            </div>`;
-
-            notificationParent.append(notificationBlock);
-    };
-
-    cartBtn.forEach((item) => {
-        item.addEventListener('click', createBlock);
-    });
-
-    
 
 }catch(e){}
 

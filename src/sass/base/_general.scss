@@ -140,6 +140,17 @@ button:focus:not(:focus-visible) {
     }
 }
 
+@keyframes status {
+    from {
+        width: 100%;
+        transition: all;
+    }
+    to {
+        width: 0%;
+        transition: all;
+    }
+}
+
 .overlay {
     position: fixed;
     width: 100vw;
@@ -179,4 +190,18 @@ button:focus:not(:focus-visible) {
 ul {
     padding-left: 0;
     list-style-type: none;
+}
+
+.star-rating__star {
+    svg {
+        fill: #aeaeae;
+    }
+}
+
+.star-rating {
+    .is-selected {
+        svg {
+            fill: #ffe200;
+        }
+    }
 }

@@ -13,6 +13,7 @@
         margin-right: 16px;
         transition: all 0.5s;
         animation: slide 1s;
+        position: relative;
         i {
             cursor: pointer;
             color: var(--mt-default);
@@ -23,10 +24,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-right: 4px;
         }
         &-body {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             padding: 8px 0;
         }
         &-img {
@@ -48,9 +50,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             width: 276px;
+            margin-bottom: 10px;
         }
         &-price {
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
         &-cart {
             padding: 6px 16px;
@@ -63,5 +66,13 @@
             }
         }
     }
-    
+    &-status {
+        position: absolute;
+        bottom: 0;
+        animation: status linear 4000ms ;
+        transition: all;
+        left: 0;
+        height: 5px;
+        background-color: var(--mt-default);
+    }
 }

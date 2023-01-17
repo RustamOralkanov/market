@@ -101,21 +101,27 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0 10px;
-                svg {
-                    width: 18px;
-                    height: 18px;
+                svg, i {
+                    font-size: 18px;
+                    color: #aeaeae;
                     fill: #aeaeae;
                     path {
                         fill: #aeaeae;
                     }
                 }
                 &:hover {
-                    svg {
+                    svg, i {
+                        color: #e31e24;
                         fill: #e31e24;
                         path {
                             fill: #e31e24;
                         }
                     }
+                }
+            }
+            .active {
+                i {
+                    color: #e31e24;
                 }
             }
             &-delete {
@@ -198,9 +204,11 @@
                         border-bottom: 1px dashed #aeaeae;
                         transition: all 0.5s;
                         margin-top: 8px;
+                        border-radius: 0;
                         &:focus {
                             border-bottom: 1px solid var(--mt-default);
                             transition: all 0.5s;
+                            box-shadow: none;
                         }
                     }
                     label {
@@ -213,12 +221,18 @@
                         display: flex;
                         flex-wrap: wrap;
                         flex-direction: row;
+                        gap: 16px;
                         margin-left: 0;
+                        margin-top: 16px;
                         input {
-                            width: calc(50% - 16px);
-                            margin-top: 16px;
-                            &:nth-child(odd) {
-                                margin-right: 32px;
+                            width: calc(50% - 32px);
+                            padding: 0;
+                            border-radius: 0;
+                            &:focus {
+                                box-shadow: none;
+                            }
+                            &:first-child {
+                                margin-right: 16px;
                             }
                         }
                     }

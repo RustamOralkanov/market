@@ -6,6 +6,7 @@
         filter: drop-shadow(0 14px 16px rgba(0,16,61,.06));
         position: relative;
         padding: 15px 40px 15px 15px;
+        border-radius: 12px;
         &:hover {
             filter: drop-shadow(0 14px 16px rgba(0,16,61,.2));
         }
@@ -56,12 +57,22 @@
             top: 10px;
             right: 12px;
             cursor: pointer;
+            i {
+                font-size: 21px;
+                transition: all 0.5s;
+                color: #aeaeae60;
+            }
             &:hover {
-                svg {
-                    path {
-                        fill: #e31e24;
-                    }
+                i {
+                    transition: all 0.5s;
+                    color: #e31e24;
                 }
+            }
+        }
+        .active {
+            i {
+                transition: all 0.5s;
+                color: #e31e24;
             }
         }
     }

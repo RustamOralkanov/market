@@ -275,11 +275,10 @@
         color: var(--mt-default);
         position: relative;
         &:hover {
-            color: var(--mt-grey);
+            color: var(--mt-default);
         }
-        svg {
-            width: 20px;
-            height: 20px;
+        i {
+            font-size: 18px;
             fill: var(--mt-default);
         }
         &-badge {
